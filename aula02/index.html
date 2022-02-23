@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuck World</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const handleButton = () => {
+        alert("Fuck World");
+      };
+
+      const Page = ({ title, subtitle, items }) => {
+        return (
+          <div>
+            <h1>{title}</h1>
+            <h4>{subtitle}:</h4>
+            {items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </div>
+        );
+      };
+
+      const App = () => {
+        return (
+          <Page
+            title="Yunk Vino"
+            subtitle="Músicas populares"
+            items={[
+              "Leans, Pt. 2",
+              "YSL",
+              "Só quando ela me quer",
+              "Bling",
+              "Campari",
+            ]}
+          />
+        );
+      };
+
+      ReactDOM.render(App(), document.getElementById("container"));
+    </script>
+  </body>
+</html>
