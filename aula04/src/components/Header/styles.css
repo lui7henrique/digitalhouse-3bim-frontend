@@ -1,16 +1,16 @@
 header {
   height: 5rem;
-  padding: 0 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #20232a;
 }
 
-@media (max-width: 978px) {
-  header {
-    padding: 1rem;
-  }
+.header-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
 }
 
 #logo-container {
@@ -72,4 +72,16 @@ nav a:hover {
 
 nav a.active {
   border-bottom: 3px solid #61dbfb;
+}
+
+@media (max-width: 978px) {
+  header {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #logo-container h1 {
+    display: none;
+  }
 }

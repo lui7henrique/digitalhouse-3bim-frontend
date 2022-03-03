@@ -52,7 +52,7 @@ export const Blog = () => {
   );
 
   return (
-    <section className="blog">
+    <section className="container">
       <h2>Blog</h2>
       <ul className="blog-items">
         {[...blogItems, ...blogItems].map((item) => {
