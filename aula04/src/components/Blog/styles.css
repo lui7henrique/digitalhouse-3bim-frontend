@@ -1,0 +1,44 @@
+.blog {
+  padding: 1rem 200px;
+}
+
+@media (max-width: 978px) {
+  .blog {
+    padding: 1rem;
+  }
+}
+
+.blog-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.blog-item {
+  width: 100%;
+  background: #20232a;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.blog-item:hover {
+  box-shadow: 0px 0px 10px #20232a;
+}
+
+.blog-item-title {
+  padding: 1rem;
+}
+
+.blog-item-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-item-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}

@@ -1,0 +1,75 @@
+header {
+  height: 5rem;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #20232a;
+}
+
+@media (max-width: 978px) {
+  header {
+    padding: 1rem;
+  }
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#logo-container h1 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+#logo-container img {
+  height: 3rem;
+  width: 3rem;
+  -webkit-animation: rotating 5s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+  height: 5.05rem;
+  padding-top: 30px;
+  border-bottom: 3px solid #20232a;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #282c34;
+}
+
+nav a.active {
+  border-bottom: 3px solid #61dbfb;
+}

@@ -10,6 +10,8 @@ function App() {
     minutes: String(new Date().getMinutes()).padStart(2, "0"),
   });
 
+  const [name, setName] = useState("");
+
   useEffect(() => {
     setTimeout(() => {
       setTime({
@@ -28,6 +30,15 @@ function App() {
       <h3>This a Create React App! 👋</h3>
       <p>You clicked {count} times</p>
       <button onClick={() => setCount((count) => count + 1)}>Click me</button>
+
+      <div>
+        <p>Your name = {name}</p>
+        <input
+          type="text"
+          placeholder="put your name here"
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
     </div>
   );
 }
